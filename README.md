@@ -2,6 +2,8 @@
 
 This is a fork of reveal.js with the Contenful presentation color scheme, fonts, and any other goodies that might be useful for Contentful presentations.
 
+The changes reside on the branch `contentful` and master should be used only to pull and keep in sync upstream changes.
+
 ## Install and run
 
 Ignore the usual installation process for reveal.js and just do:
