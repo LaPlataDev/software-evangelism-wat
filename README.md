@@ -1,3 +1,21 @@
+# Contentful reveal.js
+
+This is a fork of reveal.js with the Contenful presentation color scheme, fonts, and any other goodies that might be useful for Contentful presentations.
+
+## Install and run
+
+Ignore the usual installation process for reveal.js and just do:
+```
+npm install
+npm start
+```
+
+## Modifications
+
+The following list should reflect any modifications made to the original project to allow easier sync with upstream:
+
+- grunt-cli as a local dependency
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
@@ -497,15 +515,15 @@ You can also use different in and out transitions for the same slide:
 
 ```html
 <section data-transition="slide">
-    The train goes on … 
+    The train goes on …
 </section>
-<section data-transition="slide"> 
-    and on … 
+<section data-transition="slide">
+    and on …
 </section>
-<section data-transition="slide-in fade-out"> 
+<section data-transition="slide-in fade-out">
     and stops.
 </section>
-<section data-transition="fade-in slide-out"> 
+<section data-transition="fade-in slide-out">
     (Passengers entering and leaving)
 </section>
 <section data-transition="slide">
@@ -808,7 +826,7 @@ The multiplex plugin needs the following 3 things to operate:
 More details:
 
 #### Master presentation
-Served from a static file server accessible (preferably) only to the presenter. This need only be on your (the presenter's) computer. (It's safer to run the master presentation from your own computer, so if the venue's Internet goes down it doesn't stop the show.) An example would be to execute the following commands in the directory of your master presentation: 
+Served from a static file server accessible (preferably) only to the presenter. This need only be on your (the presenter's) computer. (It's safer to run the master presentation from your own computer, so if the venue's Internet goes down it doesn't stop the show.) An example would be to execute the following commands in the directory of your master presentation:
 
 1. ```npm install node-static```
 2. ```static```
@@ -933,7 +951,7 @@ Reveal.initialize({
 
 If you want to display math equations in your presentation you can easily do so by including this plugin. The plugin is a very thin wrapper around the [MathJax](http://www.mathjax.org/) library. To use it you'll need to include it as a reveal.js dependency, [find our more about dependencies here](#dependencies).
 
-The plugin defaults to using [LaTeX](http://en.wikipedia.org/wiki/LaTeX) but that can be adjusted through the ```math``` configuration object. Note that MathJax is loaded from a remote server. If you want to use it offline you'll need to download a copy of the library and adjust the ```mathjax``` configuration value. 
+The plugin defaults to using [LaTeX](http://en.wikipedia.org/wiki/LaTeX) but that can be adjusted through the ```math``` configuration object. Note that MathJax is loaded from a remote server. If you want to use it offline you'll need to download a copy of the library and adjust the ```mathjax``` configuration value.
 
 Below is an example of how the plugin can be configured. If you don't intend to change these values you do not need to include the ```math``` config object at all.
 
@@ -946,7 +964,7 @@ Reveal.initialize({
 		mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
 		config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
 	},
-	
+
 	dependencies: [
 		{ src: 'plugin/math/math.js', async: true }
 	]
