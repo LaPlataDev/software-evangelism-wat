@@ -17,6 +17,7 @@ npm start
 The following list should reflect any modifications made to the original project to allow easier sync with upstream:
 
 - grunt-cli as a local dependency
+- contentful theme and logos
 
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
