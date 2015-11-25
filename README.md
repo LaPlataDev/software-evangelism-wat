@@ -12,6 +12,15 @@ npm install
 npm start
 ```
 
+## Clone for your own presentations
+
+* `git clone git@github.com:contentful/reveal.js.git slides-your-presentation-name`
+* `cd slides-your-presentation-name && git checkout -b master && git branch -D contentful`
+* `git remote remove origin && git remote add upstream git@github.com:contentful/reveal.js.git`
+* Create a new repo (maybe on [contentful-labs](https://github.com/contentful-labs))
+* `git remote add origin git@github.com:contentful-labs/slides-your-presentation-name.git`
+* `git push -u origin master`
+
 ## Modifications
 
 The following list should reflect any modifications made to the original project to allow easier sync with upstream:
